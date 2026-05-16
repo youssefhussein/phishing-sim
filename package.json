@@ -1,25 +1,17 @@
 {
   "name": "phishing-sim",
   "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "tsx watch src/index.tsx",
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "db:push": "drizzle-kit push --config drizzle.config.ts",
-    "db:migrate": "drizzle-kit migrate --config drizzle.config.ts",
-    "db:generate": "drizzle-kit generate --config drizzle.config.ts"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@hono/node-server": "^1.19.14",
-    "@libsql/client": "^0.17.3",
-    "dotenv": "^17.4.2",
-    "drizzle-orm": "^0.45.2",
-    "hono": "^4.12.19"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.17",
-    "drizzle-kit": "^0.31.10",
-    "tsx": "^4.7.1",
-    "typescript": "^5.8.3"
+    "nuxt": "^4.4.5",
+    "vue": "^3.5.34",
+    "vue-router": "^5.0.6"
   }
 }
