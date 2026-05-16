@@ -1,27 +1,33 @@
 {
-  "name": "phishing-sim",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "db:migrate": "nuxt db migrate",
-    "db:generate": "nuxt db generate"
-  },
-  "dependencies": {
-    "@libsql/client": "^0.17.3",
-    "@nuxthub/core": "0.10.7",
-    "dotenv": "^17.4.2",
-    "drizzle-orm": "^0.45.2",
-    "nuxt": "^4.4.5",
-    "typescript": "^6.0.3",
-    "vue": "^3.5.34",
-    "vue-router": "^5.0.6"
-  },
-  "devDependencies": {
-    "drizzle-kit": "^0.31.10"
-  }
+	"name": "phishing-sim",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"db:generate": "nuxt db generate",
+		"db:migrate": "nuxt db migrate",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"format": "biome format .",
+		"format:fix": "biome format --write ."
+	},
+	"dependencies": {
+		"@libsql/client": "^0.17.3",
+		"@nuxthub/core": "0.10.7",
+		"dotenv": "^17.4.2",
+		"drizzle-orm": "^0.45.2",
+		"nuxt": "^4.4.5",
+		"typescript": "^6.0.3",
+		"vue": "^3.5.34",
+		"vue-router": "^5.0.6"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.15",
+		"@nuxtjs/tailwindcss": "^6.14.0",
+		"drizzle-kit": "^0.31.10"
+	}
 }

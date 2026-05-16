@@ -1,8 +1,8 @@
 {
 	"version": "6",
 	"dialect": "sqlite",
-	"id": "0faa941b-9d59-4c05-8abc-7f27c732f128",
-	"prevId": "00000000-0000-0000-0000-000000000000",
+	"id": "ba473491-70d5-4037-ab7b-fd3b8b2739f6",
+	"prevId": "5acf49e7-a99e-49fc-af41-f3e452a9ef02",
 	"tables": {
 		"users": {
 			"name": "users",
@@ -13,13 +13,6 @@
 					"primaryKey": true,
 					"notNull": true,
 					"autoincrement": true
-				},
-				"name": {
-					"name": "name",
-					"type": "text",
-					"primaryKey": false,
-					"notNull": true,
-					"autoincrement": false
 				},
 				"email": {
 					"name": "email",
@@ -35,13 +28,6 @@
 					"notNull": true,
 					"autoincrement": false
 				},
-				"avatar": {
-					"name": "avatar",
-					"type": "text",
-					"primaryKey": false,
-					"notNull": true,
-					"autoincrement": false
-				},
 				"createdAt": {
 					"name": "createdAt",
 					"type": "integer",
@@ -50,13 +36,7 @@
 					"autoincrement": false
 				}
 			},
-			"indexes": {
-				"users_email_unique": {
-					"name": "users_email_unique",
-					"columns": ["email"],
-					"isUnique": true
-				}
-			},
+			"indexes": {},
 			"foreignKeys": {},
 			"compositePrimaryKeys": {},
 			"uniqueConstraints": {},
